@@ -1,0 +1,39 @@
+@import '../../../../Styles/variables';
+
+
+
+
+.containerNavbar {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 60%;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+
+    .logo {
+        
+        display: grid;
+        justify-content: start;
+        svg {
+            width: 60px;
+            gap:15px;
+        }
+    }
+
+    ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap:65px;
+
+        a {
+            text-decoration: none;
+            color: $buttom-beige;
+        }
+        
+
+}
+ }
+

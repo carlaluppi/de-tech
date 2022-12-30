@@ -1,0 +1,55 @@
+@import '../../../Styles/_variables.scss';
+
+.container-form {
+    display: flex;
+    justify-content: flex-end;
+
+.text-main {
+    color: $buttom-beige;
+    font-family: Coda;
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+.form{ 
+    width: 50%;
+    border-color: $buttom-green;
+    padding: 10%;
+    border-radius: 20px;
+    color: $buttom-beige;
+    
+    input{
+        background-color: $background-primary;
+        color: $buttom-beige;
+        border-color: $buttom-green;
+    }
+    
+    input:focus{
+        background-color:$background-primary;
+    }
+    button{
+        background-color: $buttom-green;
+        border-color: $buttom-green;
+        color: $buttom-beige;
+        box-shadow: 2px 2px $buttom-beige;
+        width: 100px;
+    
+    }
+    button:hover{
+        background-color: $buttom-beige;
+        color:$buttom-green;
+        
+    }
+
+
+}
+
+.button-container {
+
+     display: flex;
+        justify-items: center!important;
+        align-items: center!important;
+
+
+}
+}

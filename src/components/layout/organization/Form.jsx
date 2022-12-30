@@ -1,12 +1,17 @@
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 
+import '../../../components/layout/organization/Form.scss';
+
 function Formu() {
+
   return (
-    <Form>
+    <div className='container-form'>
+      <h1 className='text-main'> Welcome, we are your reliable technical team.</h1>
+    <Form className='form'>
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Email address</Form.Label>
-        <Form.Control type="email" placeholder="Enter email" />
+        <Form.Control  type="email" placeholder="Enter email" />
         <Form.Text className="text-muted">
           We'll never share your email with anyone else.
         </Form.Text>
@@ -17,13 +22,18 @@ function Formu() {
         <Form.Control type="password" placeholder="Password" />
       </Form.Group>
       <Form.Group className="mb-3" controlId="formBasicCheckbox">
-        <Form.Check type="checkbox" label="Check me out" />
+        <Form.Check type="checkbox" label="Remember me" /> 
       </Form.Group>
-      <Button variant="primary" type="submit">
-        Submit
+      <div className='button-container'>
+      <Button className='button' variant="primary" type="submit">
+        Log In
       </Button>
+      </div>
     </Form>
+    </div>
   );
 }
 
 export default Formu;
+
+
