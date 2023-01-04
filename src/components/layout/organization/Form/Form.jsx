@@ -1,7 +1,8 @@
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+import {Link} from 'react-router-dom';
 
-import '../../../components/layout/organization/Form.scss';
+import '../Form/Form.scss';
 
 function Formu() {
 
@@ -25,9 +26,9 @@ function Formu() {
         <Form.Check type="checkbox" label="Remember me" /> 
       </Form.Group>
       <div className='button-container'>
-      <Button className='button' variant="primary" type="submit">
+      <Link to="/profile"> <Button className='button' variant="primary" type="submit">
         Log In
-      </Button>
+      </Button> </Link>
       </div>
     </Form>
     </div>

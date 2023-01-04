@@ -1,16 +1,19 @@
 import React from 'react'
 import Navbar from '../../components/layout/navigation/Navbar/Navbar';
-import Form from '../../components/layout/organization/Form/Form';
 import Footer from '../../components/layout/navigation/Footer/Footer';
+import ListDate from '../../components/layout/organization/ListDate/ListDate';
+import SelectForm from '../../components/layout/organization/SelectForm/SelectForm';
 
-const Home = () => {
+
+const List = () => {
   return (
     <div className='home'>
         <Navbar/>
-        <Form/>
+        <ListDate/>
+        <SelectForm/>
         <Footer/>
     </div>
   )
 }
 
-export default Home;
+export default List;
